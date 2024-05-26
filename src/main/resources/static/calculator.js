@@ -64,7 +64,7 @@ document.getElementById("mean").addEventListener('click', function(evt) {
         if (row.id == "table_row_top") continue;
         sum += row.children[3].children[0].value / row.children[3].children[2].value;
     }
-    result.innerHTML = sum / num_activities;
+    result.innerHTML = sum / num_activities * 100 + '%';
 })
 
 document.getElementById("weighted").addEventListener('click', function(evt) {
@@ -77,5 +77,5 @@ document.getElementById("weighted").addEventListener('click', function(evt) {
         sum += row.children[3].children[0].value / row.children[3].children[2].value * row_weight;
         weight += parseInt(row_weight);
     }
-    result.innerHTML = sum / weight;
+    result.innerHTML = sum / weight * 100 + '%';
 })
