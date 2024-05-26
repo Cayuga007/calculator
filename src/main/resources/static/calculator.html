@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/calculator.css">
+    <script src="./calculator.js" defer></script>
+</head>
+<body>
+    <div id="calculator">
+        <header>
+            Grade Calculator
+        </header>
+        <main>
+            <h3>Activities</h3>
+            <p>
+                Give grades to the numeric activities:
+            </p>
+            <table>
+                <tr id="table_row_top"><th>Name</th><th>Short Name</th><th>Weight</th><th>Grade</th><th>Percent</th></tr>
+                <tr><td>Activity 1</td><td>A1</td><td><input type="text"></td><td><input type="text"><span> / </span><input type="text"></td><td></td></tr>
+            </table>
+            <br>
+            <button id="add_row">ADD ROW</button>
+            <h3>Result</h3>
+            <p id="result"></p>
+            <div id="result_buttons">
+                <button id="weighted" class="result_button">WEIGHTED</button><button id="mean" class="result_button">MEAN</button>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
